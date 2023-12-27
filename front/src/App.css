@@ -1,0 +1,159 @@
+/* IMPORTING NEEDED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+
+
+/* BASIC STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+} 
+
+h1 {
+  text-align: center;
+}
+
+
+/* HEADER COMPONETS STYLES */
+header {
+  width: 50%;
+  margin-left: 30%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+header h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  color: rgb(37, 37, 37);
+  font-size: 30px;
+  margin-top: 3px;
+}
+
+nav {
+  font-size: 20px;
+}
+ol{
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  text-decoration:none;
+  color: #000;
+}
+
+li a:hover {
+  border-bottom: 1px solid #000;
+}
+
+header p {
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+header p span {
+  color: rgb(37, 37, 37);
+  font-weight: 900;
+
+}
+
+
+/* UPLOAD IMAGE STYLES */
+
+.upload-container {
+  width: 40%;
+  margin-left: 30%;
+
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column;
+ 
+}
+
+.file-input-container {
+  width: 60%;
+  margin-left: 20%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+
+input[type="file"] {
+    display: none;
+}
+
+
+.image-upload {
+    border: .6px solid black;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.image-upload:hover {
+    border: 1px solid black;
+    font-weight: 700;
+    transition-property: border, font-weight;
+}
+
+
+.file-upload {
+  padding:8px 20px 8px 20px;
+  border-radius: 10px;
+  background-color: #596d48;
+  color: #f4f4f4;
+  font-size: 20px;
+  border: none;
+  width: 40%;
+  margin-left: 30%;
+
+}
+
+.file-upload:hover {
+  background-color: #f4f4f4;
+  color: #596d48;
+  border: 3px solid #596d48;
+  transition-property: color, background-color;
+  transition-duration: 0.2s;
+}
+
+.file-upload:focus {
+  outline:none;
+}
+
+.upload-image-container {
+  width: 20%;
+  margin-left: 40%;
+  margin-bottom: 20px;
+
+}
+.upload-image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+
+.result {
+  width: 60%;
+  margin-left: 20%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
